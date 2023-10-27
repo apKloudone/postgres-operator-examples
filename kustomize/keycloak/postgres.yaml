@@ -4,9 +4,9 @@ metadata:
   name: keycloakdb
 spec:
   image: registry.developers.crunchydata.com/crunchydata/crunchy-postgres:ubi8-15.4-0
-  postgresVersion: 15
+  postgresVersion: 14
   instances:
-    - replicas: 2
+    - replicas: 3
       dataVolumeClaimSpec:
         accessModes:
         - "ReadWriteOnce"
